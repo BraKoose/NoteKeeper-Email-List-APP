@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hello Koose"/>
+
+    <EditText
+        android:id="@+id/edt_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_relative"
+        android:hint="Enter Your Name"
+        android:importantForAutofill="no"
+
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edt_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_Name"
+        android:autofillHints=" "
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/btn_Insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_Email"
+        android:layout_marginLeft="35dp"
+        android:text="Insert"/>
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_Email"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="35dp"
+        android:layout_toEndOf="@id/btn_Insert"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btn_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Insert"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btn_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Update"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/btn_Delete"
+        android:text="View" />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_Delete"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:hint="Enter ID to Delete and Update data"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_id"/>
+
+
+
+
+
+
+</RelativeLayout>
